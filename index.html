@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test work</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="add-form">
+        <h3 class="laibel_form">Регестрация клиента</h3>
+
+        <div class="div_form"><label>Фамилия*</label> <input type="text" id="firstSurname" class="text_form" name="surname" /></div>
+
+        <div class="div_form"><label>Имя*</label> <input type="text" id="name" class="text_form" name="name" /></div>
+
+        <div class="div_form"><label>Очество</label> <input type="text" class="text_form" name="name" /></div>
+
+        <div class="div_form">
+          <label>Дата рождения*</label>
+          <input type="date" class="date_form" id="dateBirth" name="date" />
+        </div>
+
+        <div class="div_form">
+          <label>Номер телефона*</label>
+          <input type="tel" name="phone" id="phone" class="phone_forme" placeholder="70-(000)-000-00-0" />
+        </div>
+
+        <div class="div_form">
+          <label class="title_label" >Пол*
+          <div id="genders">
+            <span class="man">Мужской</span>
+            <input type="radio" id="gender" placeholder="Мужской" name="gender" />
+            <span class="women">Женский</span>
+            <input type="radio" id="gender" placeholder="Женский" name="gender" /></label>
+          </div>
+        </div>
+
+        <div class="div_form">
+          <label>Группа*
+          <select name="status" id="status">
+            <option value="">--значение не выбрано--</option>
+            <option value="VIP">VIP</option>
+            <option value="Проблемные">Проблемные</option>
+            <option value="ОМС">ОМС</option>
+          </select></label>
+        </div>
+
+        <div class="div_form">
+          <label >Лечащий Врач*
+          <select id="doctor">
+            <option value="">--значение не выбрано--</option>
+            <option value="Иванов">Иванов</option>
+            <option value="Захаров">Захаров</option>
+            <option value="Чернышева">Чернышева</option>
+          </select></label>
+        </div>
+        <div class="div_form">
+          <label for="" >Не отправлять СМС
+            <div>
+              <span>Да</span><input type="checkbox" name="yes" />
+              <span>нет</span><input type="checkbox" name="no" /></label>
+            </div>
+        </div>
+        <div class="div_form">
+          <label for="">адрес</label>
+          <label for="">Индекс <input type="nomber" name="address" /></label>
+          <label for="">Страна <input type="text" name="address" /></label>
+          <label for="">Область <input type="text" name="address" /></label>
+          <label for="">Город* <input type="text" id="siti" name="address" /></label>
+          <label for="">Улица <input type="text" name="address" /></label>
+          <label for="">Дом <input type="text" name="address" /></label>
+        </div>
+        <div class="div_form">
+          <label for="">Тип документа*</label>
+          <select  id="userDocumment">
+            <option value="">--значение не выбрано--</option>
+            <option value="Паспорт">Паспорт</option>
+            <option value="Свидетельство о рождении">Свидетельство о рождении</option>
+            <option value="Вод. удостоверение">Вод. удостоверение</option>
+          </select>
+          <label for="">Серия <input type="nomber" name="documents" /></label>
+          <label for="">Номер <input type="nomber" name="documents" /></label>
+          <label for="">Кем выдан <input type="text" name="documents" /></label>
+          <label for="">Дата выдачи* <input type="date" id="dateDocument" name="documents" /></label>
+        </div>
+        <div class="div_form-btn"><button type="button" id="registration">зарегистрировать</button> <button type="button" id="cancell">отмена</button></div>
+      </form>
+    </div>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
